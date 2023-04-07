@@ -365,3 +365,59 @@ p{
 .fa-heart{
     color: red;
 }
+
+
+
+
+
+
+
+
+/* -------------------ABOUT US------------------------ */
+.about-header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Media/background.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    width: 100%;
+}
+.about-info{
+    display: flex;
+    position: relative;
+    width:80%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.about-info-content{
+    flex-basis: 44%;
+}
+.about-info p{
+    padding: 0;
+    margin-bottom: 3%;
+}
+.about-info h1{
+    margin-bottom: 2%;
+}
+.about-info-content a{
+    color:red;
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+.about-info-content a:hover{
+    color: white;
+}
+.about-info-img{
+    flex-basis:44%;
+}
+.about-info-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width:700px){
+    .nav-links{
+        height: 100vh;
+    }
+}
+
