@@ -82,12 +82,7 @@ nav img{
     font-size: 13px;
     background:transparent;
     /* cursor: pointer; */
-}
-
-.hero-brn::before{
-    height: 1px;
-    width: 20px;
-    background-color: white;
+    transition: 0.5s;
 }
 
 .hero-btn:hover{
@@ -499,8 +494,88 @@ p{
     margin-top: 5%;
 }
 
+
+/* ------comment------ */
+.comments{
+    width: 60%;
+    border: 2px solid rgba(117, 112, 112, 0.746);
+    padding: 20px 35px;
+}
+
+#txtarea{
+    margin-top: 4%;
+    background-color: rgba(189, 184, 184, 0.25);
+    min-width: 100%;
+    max-width: 100%;
+    border: transparent;
+    padding:5px;
+}
+
+#txtarea:focus{
+    outline: none;
+}
+
+.comments a{
+    color: red;
+    border: 1px solid red;
+    margin: 15px 10px;
+}
+
+.comments a:hover{
+    color:white;
+}
+
+.stylish-field{
+    width: 100%;
+    position: relative;
+    margin-top: 4%;
+}
+
+.stylish-input{
+    width: 100%;
+    padding:8px;
+}
+
+.stylish-label{
+    position:absolute;
+    left:0;
+    top: 0;
+    padding: 5px;
+    color: rgba(75, 73, 73, 0.684);
+    transition-duration: 0.7s;
+    cursor: text;
+}
+
+.stylish-input:not(:placeholder-shown).stylish-input:not(:focus) ~ .stylish-label,
+.stylish-input:focus ~ .stylish-label{
+    transform: translate(10px,-13px);
+    font-size: 0.65em;
+    color: black;
+    background-color: white;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.stylish-input:not(:placeholder-shown).stylish-input:not(:focus) .stylish.input{
+    background-color: transparent;
+}
+
+.stylish-field textarea{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
 @media (max-width:750px){
     .heading h1{
         font-size:large;
+    }
+    .blog-content{
+        width: 100%;
+    }
+    .comments{
+        width: 100%;
+        margin: auto;
+        transform: translateX(-4%);
     }
 }
