@@ -556,7 +556,8 @@ p{
     border-left: 2px solid black;
 }
 
-.stylish-input:not(:placeholder-shown).stylish-input:not(:focus) .stylish.input{
+.stylish-input:not(:placeholder-shown).stylish-input:not(:focus) .stylish.input
+{
     background-color: transparent;
 }
 
@@ -574,8 +575,11 @@ p{
         width: 100%;
     }
     .comments{
-        width: 100%;
+        width: 80%;
         margin: auto;
         transform: translateX(-4%);
+    }
+    .stylish-field{
+        margin-top: 7%;
     }
 }
